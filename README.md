@@ -11,7 +11,7 @@ These are CSS implementations of the prompts. It's not in ink - which disqualifi
 
 ### Online
 
-Although not currently working, the images _should_ be visible from [mrajgurney.github.io/inktober/](https://mrajgurney.github.io/inktober/)
+Navigate to [mrajgurney.github.io/inktober/](https://mrajgurney.github.io/inktober/)
 
 ### Locally
 
