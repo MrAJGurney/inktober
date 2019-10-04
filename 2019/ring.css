@@ -14,24 +14,24 @@ div.background {
 }
 
 div.ring-foreground {
-    width: 60vw;
-    height: 15vw;
+    width: 70vw;
+    height: 10vw;
     border-radius: 50%;
     border-style: solid;
-    border-width: 10vw;
+    border-width: 5vw;
     border-color: darkslategray;
 
     /*
-        x offset = 2 * border-width / ( 2 * border-width + width
+        x offset ≈ border-width / ( 2 * border-width + width)
     */
-    clip-path: polygon(12.5% 50%, 87.5% 50%, 87.5% 100%, 12.5% 100%);
+    clip-path: polygon(6.25% 50%, 93.75% 50%, 93.75% 100%, 6.25% 100%);
 
     /*
-        y translation = (-1 * height) / 2
+        y translation ≈ height / 2
     */
-    transform: translate(0, -7.5vw);
+    transform: translate(0, -2.5vw);
 
-    z-index: 2;
+    z-index: 3;
     grid-column: 1;
     grid-row: 1;
 }
@@ -41,6 +41,29 @@ div.sun {
     height: 40vw;
     background: Goldenrod;
     border-radius: 50%;
+
+    z-index: 2;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div.ring-background {
+    width: 70vw;
+    height: 10vw;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5vw;
+    border-color: OliveDrab;
+
+    /*
+        x offset ≈ border-width / ( 2 * border-width + width)
+    */
+    clip-path: polygon(6.25% 50%, 93.75% 50%, 93.75% 0%, 6.25% 0%);
+
+    /*
+        y translation ≈ height / 2
+    */
+    transform: translate(0, 2.5vw);
 
     z-index: 1;
     grid-column: 1;
