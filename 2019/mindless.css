@@ -12,3 +12,27 @@ div.background {
     justify-items: center;
     align-items: center;
 }
+
+div.centered {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div.television-background {
+    width: 60vw;
+    height: 40vw;
+    border-radius: 1%;
+    background: black;
+
+    z-index: 1;
+}
+
+div.television-foreground {
+    width: 55vw;
+    height: 35vw;
+    border-radius: 1%;
+    background: WhiteSmoke;
+    box-shadow: 0 0 1vw 0.5vw white;
+
+    z-index: 2;
+}
