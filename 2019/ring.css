@@ -22,14 +22,20 @@ div.ring-foreground {
     border-color: darkslategray;
 
     /*
-        x offset ≈ border-width / ( 2 * border-width + width)
+        clip start point = border-width / ( 2 * border-width + width)
     */
     clip-path: polygon(6.25% 50%, 93.75% 50%, 93.75% 100%, 6.25% 100%);
 
     /*
-        y translation ≈ height / 2
+        Ellipse equations:
+            x = (width/2 + border-width) x Cos(t)
+            y = (height/2 + border-width) x Sin(t)
+
+        translation = y / 2
+
+        x = width
     */
-    transform: rotate(0.02turn) translate(0, -2.5vw);
+    transform: rotate(0.02turn) translate(0, -2.42061459138vw);
 
     z-index: 3;
     grid-column: 1;
@@ -56,14 +62,18 @@ div.ring-background {
     border-color: OliveDrab;
 
     /*
-        x offset ≈ border-width / ( 2 * border-width + width)
+        clip start point = border-width / ( 2 * border-width + width)
     */
     clip-path: polygon(6.25% 50%, 93.75% 50%, 93.75% 0%, 6.25% 0%);
 
     /*
-        y translation ≈ height / 2
+        x = (width/2 + border-width) x Cos(t)
+        y = (height/2 + border-width) x Sin(t)
+        translation = y / 2
+
+        x = width
     */
-    transform: rotate(0.02turn) translate(0, 2.5vw);
+    transform: rotate(0.02turn) translate(0, 2.42061459138vw);
 
     z-index: 1;
     grid-column: 1;
