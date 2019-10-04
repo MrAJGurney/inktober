@@ -29,7 +29,7 @@ div.ring-foreground {
     /*
         y translation ≈ height / 2
     */
-    transform: translate(0, -2.5vw);
+    transform: rotate(0.02turn) translate(0, -2.5vw);
 
     z-index: 3;
     grid-column: 1;
@@ -63,7 +63,7 @@ div.ring-background {
     /*
         y translation ≈ height / 2
     */
-    transform: translate(0, 2.5vw);
+    transform: rotate(0.02turn) translate(0, 2.5vw);
 
     z-index: 1;
     grid-column: 1;
