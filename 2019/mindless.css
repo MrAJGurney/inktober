@@ -36,3 +36,13 @@ div.television-foreground {
 
     z-index: 2;
 }
+
+div.head {
+    width: 20vw;
+    height: 30vw;
+    border-radius: 40%;
+    background: SandyBrown;
+    transform: translate(0, 7.5vw);
+
+    z-index: 3;
+}
