@@ -30,3 +30,15 @@ div.hook-bend {
 
     z-index: 1;
 }
+
+div.hook-barb {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10vw 5vw 0 5vw;
+    border-color: darkSlateGrey transparent transparent transparent;
+
+    transform: translate(12.5vw, 5vw);
+
+    z-index: 2;
+}
